@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code - Dev Gatito</title>
+    <!--codigo para icono de la pagina-->
+    <link rel="icon" sizes="192x192" href="https://code.visualstudio.com/favicon.ico">
+    <link rel="shortcut icon" href="https://code.visualstudio.com/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://code.visualstudio.com/favicon.ico" type="image/x-icon"/>
+    <!--codigo de estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--codigo de la pagina https://fonts.google.com/-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--codigo de la pagina https://boxicons.com-->
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        #ultimo + div {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img class="menu-java" src="img/bx-menu.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#galeria">Docs</a>
+                <a href="#alumnos">Alumnos</a>
+                <a href="#galeria-game">Games Web</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Mejores 5 lenguajes para aprender y encontrar trabajo el 2023 y 2024</h1>
+            <p class="copy">¡Que Esperas Estudia Ya!</p>
+        </div>
+    </header>
+    <main>
+        <section id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">TIPOS DE LENGUAJE</h2>
+                <div class="contenedor-galeria">
+                    <div class="imagen-port">
+                        <img src="https://learn.microsoft.com/es-es/visualstudio/get-started/csharp/media/get-started-data-tip.gif?view=vs-2022" alt="" />
+                        <div class="hover-galeria">
+                            <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/120px-C_Sharp_wordmark.svg.png" alt="" />
+                              </a>
+                            <p>C Sharp</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://code.visualstudio.com/assets/docs/languages/python/python-editing.gif" alt="" />
+                        <div class="hover-galeria">
+                            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png" alt="" />
+                              </a>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://code.visualstudio.com/assets/docs/languages/html/auto-close1.gif" alt="" />
+                        <div class="hover-galeria">
+                            <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png" alt="" />
+                              </a>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://code.visualstudio.com/assets/docs/languages/html/emmetsnippet.gif" alt="" />
+                        <div class="hover-galeria">
+                            <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/250px-CSS3_logo_and_wordmark.svg.png" alt="" />
+                              </a>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="https://raw.githubusercontent.com/axilleasiv/vscode-javascript-repl-docs/master/vscode-javascript-repl.gif" alt="" />
+                        <div class="hover-galeria">
+                            <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/320px-Unofficial_JavaScript_logo_2.svg.png" alt="" />
+                              </a>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="alumnos">
+            <h2 class="subtitulo">Nuestros Alumnos</h2>
+            <div class="cards">
+                <div class="card">
+                    <a target="_blank" href="https://www.facebook.com/estebanantony.coloradoberrocal"><img src="img/user1.jpg" alt=""></a>
+                    <div class="contenido-texto-card">
+                        <h4>Esteban Antony Colorado Berrocal</h4>
+                        <p>Un salto laboral al mundo  !!! saludos desde Trujillo.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a target="_blank"><img src="img/user2.jpg" alt=""></a>
+                    <div class="contenido-texto-card">
+                        <h4>Renatta Davila Oliveira</h4>
+                        <form class="contenido-texto-card" name="enlace" action="https://www.facebook.com/renata.davilaoliveira">
+                            <p><i class='bx bxs-user-rectangle' ></i> Usuario: <input type="text" name="login"></input></p>
+                            <p><i class='bx bxs-lock'></i> Contraseña: <input type="password" name="password"></input></p>
+                            <input onclick=ir() type="button" value="Iniciar sesión">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="galeria-game">
+            <div class="contenedor">
+                <h2 class="subtitulo">Árbol ABC: Juegos educativos y didácticos online para niños</h2>
+                <div class="contenedor-galeria">
+                    <div class="imagen-port">
+                        <img src="https://kahoot.com/files/2022/01/preview-image_kahoot-1.png" alt="" />
+                        <div class="hover-galeria">
+                            <a class="game-abc" href="https://kahoot.it/" target="_blank">Kahoot! (PIN GAME - 03172914)</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="data:image/png;base64,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" alt="" />
+                        <div class="hover-galeria">
+                            <a class="game-abc" href="https://forms.office.com/r/yWEfy8dEKJ" target="_blank">Microsoft Forms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="spotify">
+            <div class="contenedor">
+                <h2 class="subtitulo">Spotify Joshe Gatito</h2>
+                <div class="contenedor-galeria">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3X8VaHtVrl6weFFunKmESd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">© 2023 Página web creado por Joshe Gatito</h2>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=51975285323" class="social-media-icon">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/jamesjyf" class="social-media-icon">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a target="_blank" href="mailto:joseluis_.100@hotmail.com?subject=Software Tools" class="social-media-icon">
+                        <i class='bx bx-envelope' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+
+    <div id="ultimo"></div>
+</body>
+</html>
